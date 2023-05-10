@@ -1,0 +1,361 @@
+*{
+    padding: o;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+img, svg {
+    vertical-align: middle;
+}
+
+header {
+    background-color: #fff;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 50px;
+    padding: 15px 0;
+}
+
+nav ul li {
+    padding: 15px 40px;
+    border-radius: 20px 20px;
+    background-color: #17bad1;
+    color: white;
+    margin-right: 10px;
+    box-shadow: 0 5px 14px -3px #17bad1;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+nav ul li:hover {
+    background-color: #0d6efd;
+}
+
+header img {
+    width: 100%;
+    height: 88vh;
+}
+
+/* Main Styles */
+.container .info{
+    padding: 60px 90px;
+    background-color: rgb(192, 205, 210);
+}
+
+.container .info .details{
+    display: flex;
+}
+
+.container .info .details img{
+    flex: 5;
+    width: 500px;
+    height: 400px;
+}
+
+.container .info .details div{
+    flex: 7;
+    padding: 5px 40px;
+}
+
+.container .info .details div h3{
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
+    font-size: 20px;
+}
+
+.container .info .details div p {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container .info .details div .line{
+    width: 20px;
+    height: 1px;
+    background: rgb(70, 7, 177);
+    margin: 30px 0;
+}
+
+.container .info .join{
+    width: 50%;
+    margin: 60px auto;
+    text-align: center;
+}
+.container .info .join p:first-child{
+    color: lightskyblue;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.container .info .join button {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 20px 20px;
+    font: 1em sans-serif;
+}
+
+.container .deliver{
+    background-color: #fff;
+}
+
+.container .deliver h3 {
+    text-align: center;
+    font-size: 40px;
+    padding: 10px 0;
+    color: lightskyblue;
+}
+
+.container .deliver .types{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.container .deliver .types .type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.container .deliver .types .type img{
+    width: 200px;
+}
+
+.container .deliver .types .type .name{
+    color: lightgreen;
+    font-size: 30px;
+}
+
+.container .deliver .types .type .text {
+    border-top: 1px sold grey;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.easyuse{
+    background-color: rgb(88, 88, 236);
+    display: flex;
+}
+
+.easyuse .text{
+    flex: 5;
+    padding: 40px;
+    text-align: right;
+    width: 70%;
+}
+
+.easyuse .text h3{
+    font-size: 40px;
+    color: white;
+}
+
+.easyuse .text div{
+    margin: 90px 0;
+}
+
+.easyuse .text div h5 {
+    color: lightskyblue;
+    font-size: 20px;
+}
+
+.easyuse .text div p{
+    color: #fff;
+}
+
+.easyuse img{
+    flex: 7;
+}
+
+.illustration{
+    background-image: url("./images/ilustrasion-scene.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 353px;
+    position: relative;
+    overflow: hidden;
+}
+
+.illustration .one{
+    position: relative;
+    top: 200px;
+    right: 510vh;
+    animation-duration: 50s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: vehicle1;
+}
+
+.illustration .two{
+    position: relative;
+    top: 100px;
+    right: 443vh;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: vehicle1;
+}
+
+.illustration .three{
+    position: relative;
+    top: 10px;
+    left: 150vh;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    animation-name: vehicle3;
+}
+
+@keyframes vehicle1 {
+    from {
+        right: 510vh;
+    }
+    to {
+        right: 10vh;
+    }
+}
+@keyframes vehicle3 {
+    from {
+        left: 150vh;
+    }
+    to {
+        left: -500vh;
+    }
+}
+
+.footer{
+    padding: 60px;
+    background-color: black;
+    margin-top: 10px;
+    color: white;
+}
+
+.footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.footer div .list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer div .list p {
+    font-size: 22px;
+}
+
+.footer div .list ul {
+    margin: 0;
+    list-style-type: none;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.footer div .list ul li {
+    margin: 10px 0;
+}
+
+.footer div button {
+    display: flex;
+    align-items: start;
+    border: none;
+    padding: 15px;
+    background-color: lightskyblue;
+    border-radius: 15px 15px;
+    color: white;
+}
+
+.footer p {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul{
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: 15px;
+        padding: 10px 0;
+    }
+    nav ul li {
+        padding: 15px 15px;
+    }
+    header img {
+        /* width: 1296px;
+        height: 88vh; */
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+    .container .info{
+        padding: 10px 15px;
+    }
+    .container .info .details{
+        flex-direction: column;
+    }
+    .container .info .details img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .container .deliver .types{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .container .deliver .types .type{
+        margin-bottom: 10px;
+    }
+    .easyuse{
+        flex-direction: column;
+    }
+    .easyuse .text{
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+    .footer{
+        padding: 5px;
+    }
+    .footer div{
+        flex-direction: column;
+        padding: 5px;
+    }
+    .footer img {
+        width: 100%;
+        height: 100%;
+    }
+    .footer div .list ul {
+        margin-left: 5px;
+    }
+    
+}
